@@ -1,4 +1,4 @@
-# Cloudflare × Workers Cloudinary Proxy
+# Cloudflare Workers × Cloudinary Cache + Proxy
 
 Use this to:
 
