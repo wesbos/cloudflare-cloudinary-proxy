@@ -20,3 +20,20 @@ This is made for Cloudinary, but should work for any CDN. For instance, you can 
   * `wrangler publish --env production` to push to your custom domain
 
 If you haven't already, install wrangler on your machine with `npm i @cloudflare/wrangler -g`. Don't pop a sudo in front, it doesn't work. You can login with `wrangler login`.
+
+## To use
+Say you have a URL that looks like this:
+
+```
+https://res.cloudinary.com/wesbos/image/upload/v1612297289/ARG-poster_cexeys.jpg
+```
+
+Replace the `res.cloudinary.com/wesbos/image` part with `images.yourdomain.com/CLOUDNAME`.
+
+So mine looks like this:
+
+`https://images.wesbos.com/upload/v1612297289/ARG-poster_cexeys.jpg`
+
+This should still work with all the fetching, and URL transforms.
+
+You can verify that your images are being cached by looking for the `cf-cache-status HIT` response header in your dev tools network tab. This will only show up the second time you request it.
