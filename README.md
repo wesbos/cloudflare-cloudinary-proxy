@@ -28,7 +28,7 @@ Say you have a URL that looks like this:
 https://res.cloudinary.com/wesbos/image/upload/v1612297289/ARG-poster_cexeys.jpg
 ```
 
-Replace the `res.cloudinary.com/wesbos/image` part with `images.yourdomain.com/CLOUDNAME`.
+Replace the `res.cloudinary.com/wesbos/image` part with `images.yourdomain.com`.
 
 So mine looks like this:
 
