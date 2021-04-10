@@ -6,5 +6,5 @@ vars = { ENVIRONMENT = "dev", CLOUD_NAME = "GET-FROM-CLOUDINARY" }
 [env.production]
 name = "cloudinary-proxy"
 vars = { ENVIRONMENT = "production", CLOUD_NAME = "GET-FROM-CLOUDINARY" }
-route = "images.yourdomain.com/*"
+route = "media.yourdomain.com/*"
 zone_id = "get this id from your domain name page in cloudflare"
