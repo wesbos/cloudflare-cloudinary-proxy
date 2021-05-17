@@ -13,7 +13,7 @@ This is made for Cloudinary, but should work for any CDN. For instance, you can 
 1. Rename `wrangler.toml.example` to `wrangler.toml`
 2. In `wrangler.toml`, fill in the Account ID and Zone ID found on your cloudflare domain name main page.
 3. Fill in your Cloudinary cloud name in the environmental variables in `wrangler.toml`
-3. In Cloudflare, add a sub-domain DNS Record that will handle your images, like `images.yourdomain.com`. Set this to type: `AAA`, name: `images`, content: `100::`
+3. In Cloudflare, add a sub-domain DNS Record that will handle your images, like `images.yourdomain.com`. Set this to type: `AAAA`, name: `images`, content: `100::`
 4. Change `route = "images.yourdomain.com/*"` in `wranglerfile.toml` to match your domain.
 5. Deploy the sucker with:
   * `wrangler publish` to test it. This will run it on wrangler.dev
