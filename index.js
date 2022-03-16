@@ -14,7 +14,9 @@ async function serveAsset(event) {
     const cloudinaryURL = `${CLOUD_URL}${url.pathname}`;
     response = await fetch(cloudinaryURL, { headers: event.request.headers })
     // Cache for however long, here is 4 hours.
-    const headers = { "cache-control": "public, max-age=14400" }
+    const headers = new Headers(response.headers);
+    headers.set("cache-control", `public, max-age=14400`);
+    headers.set("vary", "Accept");
     response = new Response(response.body, { ...response, headers })
     event.waitUntil(cache.put(event.request, response.clone()))
   }
