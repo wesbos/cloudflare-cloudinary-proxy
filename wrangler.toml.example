@@ -1,5 +1,6 @@
 name = "cloudinary-proxy-dev"
-type = "javascript"
+main = "index.js"
+compatibility_date = "UPDATE-THIS-WITH-PUBLISH-DATE-[YYYY-MM-DD]"
 account_id = "get-this-from-cloudflare"
 workers_dev = true
 vars = { ENVIRONMENT = "dev", CLOUD_NAME = "GET-FROM-CLOUDINARY" }
